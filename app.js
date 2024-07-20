@@ -10,14 +10,14 @@ function palindromeChecker() {
     const result = document.getElementById('result');
     // operator logic "if" the word is the same in reverse or not
     if (inputText.trim() === '') {
-        result.innerHTML = 'Input is empty. Please enter something.'
+        alert("Please input a value")
         console.log('Input is empty. Please enter something.');
         // operator logic "elif if" to check if the word is palindrome 
     } else if (reverseInput === inputText.toLowerCase().replace(/[^a-z0-9]/g, '')) {
-        result.innerHTML = `${inputText} is a palindrome`;
+        result.innerHTML = `<p><strong>${inputText}</strong> is a palindrome</p>`;
         console.log(`${inputText} is palindrome`);
     } else {
-        result.innerHTML = `${inputText} is not a palindrome`
+        result.innerHTML = `<p><strong>${inputText}</strong> is not a palindrome</p>`;
         console.log(`${inputText} isn't palindrome`);
     }
 }
